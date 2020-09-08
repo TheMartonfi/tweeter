@@ -39,3 +39,7 @@ button[type='submit']:hover {
   cursor: pointer;
   background-color: #5e83ff;
 }
+
+.negative-counter {
+  color: red;
+}
