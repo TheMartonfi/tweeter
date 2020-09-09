@@ -13,7 +13,10 @@ body {
   font-family: 'Source Sans Pro', 'sans-serif';
 }
 
-main {
+.container {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
   width: 90%;
   margin: auto;
 }

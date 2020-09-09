@@ -1,7 +1,11 @@
 nav {
   height: 120px;
+  width: 100%;
   background-color: #4056A1;
   font-family: 'Bungee', 'sans-serif';
   color: #FFFFFF;
   padding: 1.5em;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
