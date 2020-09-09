@@ -1,4 +1,6 @@
 nav {
+  display: flex;
+  justify-content: space-between;
   height: 120px;
   width: 100%;
   background-color: #4056A1;
@@ -8,4 +10,17 @@ nav {
   overflow: hidden;
   position: fixed;
   top: 0;
+}
+
+#compose {
+  font-family: 'Source Sans Pro', 'sans-serif';
+  border: 4px double white;
+  padding: 10px;
+  align-self: center;
+}
+
+#compose:hover {
+  background-color: #5e83ff;
+  cursor: pointer;
+  box-shadow: 8px 8px 0px 1px #003688;
 }
