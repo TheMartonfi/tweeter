@@ -34,16 +34,27 @@ $(() => {
     });
   };
 
+  // Assertion error onloadwff.js:71 when pressing enter in textarea
   $('form').submit(function(event) {
     event.preventDefault();
 
     const $text = $(this).children('textarea');
     const serializedText = $text.serialize();
+    const textValue = $text.val();
+    const isCharacterCountValid = $text.val().length <= 140;
 
-    $.post('/tweets', serializedText)
-    .then(() => {
-      loadTweets();
-    });
+    if (textValue && isCharacterCountValid) {
+      $.post('/tweets', serializedText)
+      .then(() => {
+        $text.val('');
+        $('.counter').text('140');
+        loadTweets();
+      });
+    } else if (!textValue) {
+      alert(`Empty field`);
+    } else if (!isCharacterCountValid) {
+      alert('Too much spaghet')
+    }
   });
 
   loadTweets();
