@@ -1,5 +1,5 @@
 $(() => {
-
+  
   const createTweetElement = (tweetData) => {
     const $tweet = $(`<article class="tweet"></article>`);
     const $header = $(`<header></header>`);
@@ -61,6 +61,10 @@ $(() => {
       $tooLongError.slideDown(800);
     }
   });
+
+  $('#compose').click(function () {
+      $('.new-tweet').slideToggle(800);
+  }); 
 
   loadTweets();
 });
