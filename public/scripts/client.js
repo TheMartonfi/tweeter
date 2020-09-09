@@ -42,6 +42,11 @@ $(() => {
     const serializedText = $text.serialize();
     const textValue = $text.val();
     const isCharacterCountValid = $text.val().length <= 140;
+    const $emptyFieldError = $($('.new-tweet').children()[0]);
+    const $tooLongError = $($('.new-tweet').children()[1]);
+
+    $emptyFieldError.slideUp(800);
+    $tooLongError.slideUp(800);
 
     if (textValue && isCharacterCountValid) {
       $.post('/tweets', serializedText)
@@ -51,9 +56,9 @@ $(() => {
         loadTweets();
       });
     } else if (!textValue) {
-      alert(`Empty field`);
+      $emptyFieldError.slideDown(800);
     } else if (!isCharacterCountValid) {
-      alert('Too much spaghet')
+      $tooLongError.slideDown(800);
     }
   });
 
