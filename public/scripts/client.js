@@ -64,6 +64,7 @@ $(() => {
 
   $('#compose').click(function () {
       $('.new-tweet').slideToggle(800);
+      $('#tweet-text').focus();
   }); 
 
   loadTweets();

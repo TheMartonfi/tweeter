@@ -1,12 +1,11 @@
 .new-tweet{
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  margin-top: 60px;
+  margin-top: 70px;
   margin-bottom: 30px;
-  bottom:0px;
 }
 
 .error {
@@ -14,7 +13,8 @@
   color: red;
   border: 4px solid red;
   padding: 25px;
-  margin-bottom: 60px;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 #tweet-text {
