@@ -9,3 +9,13 @@ nav + header {
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum.png");
   color: white;
 }
+
+@media only screen and (min-width: 1024px) {
+
+  nav + header {
+    width: 28vw;
+    float: left;
+    margin-top: 250px;
+    margin-left: 50px;
+  }
+}

@@ -6,7 +6,6 @@ html {
 }
 
 body {
-  width: 100%;
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
@@ -17,7 +16,7 @@ body {
   display: flex;
   flex-flow: wrap row;
   justify-content: center;
-  width: 92%;
+  width: 92vw;
   margin: auto;
 }
 
@@ -48,4 +47,15 @@ body {
 
 #top-button:active {
   box-shadow: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    position: relative;
+    top: 248px;
+    left: 8px;
+    width: 60vw;
+    flex-flow: wrap column;
+  }
+
 }

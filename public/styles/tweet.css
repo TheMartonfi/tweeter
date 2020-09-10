@@ -10,8 +10,8 @@
 .tweet > header {
   display: flex;
   justify-content: space-between;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .tweet > header > div > img {
@@ -34,7 +34,8 @@
   display: flex;
   justify-content: flex-start;
   width: 95%;
-  margin-left: 30px;
+  margin-left: 20px;
+  margin-right: 20px
 }
 
 .tweet > footer {
@@ -66,4 +67,23 @@
 
 .tweet:hover > footer > img {
   opacity: 1;
+}
+
+@media only screen and (min-width: 1024px) {
+  .tweet {
+    width: 60vw;
+    margin-top: 0;
+  }
+
+  #tweets-container {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .tweet {
+    font-size: 0.75em;
+  }
 }

@@ -83,3 +83,21 @@ button[type='submit']:active {
 .negative-counter {
   color: red;
 }
+
+@media only screen and (min-width: 1024px) {
+  .new-tweet {
+    width: 60vw;
+    margin: 0;
+    margin-bottom: 45px;
+    top: 368px;
+    justify-content: flex-end;
+  }
+
+  #tweet-text {
+    width: 60vw;
+  }
+
+  textarea[id='tweet-text'] + div {
+    width: 60vw;
+  }
+}
