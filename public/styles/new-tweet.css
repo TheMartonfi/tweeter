@@ -33,21 +33,18 @@
   outline: 0;
 }
 
-#tweet-text::-webkit-scrollbar-track
-{
+#tweet-text::-webkit-scrollbar-track {
 	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	border-radius: 10px;
 	background-color: #f4f1ec;
 }
 
-#tweet-text::-webkit-scrollbar
-{
+#tweet-text::-webkit-scrollbar {
 	width: 12px;
 	background-color: #F5F5F5;
 }
 
-#tweet-text::-webkit-scrollbar-thumb
-{
+#tweet-text::-webkit-scrollbar-thumb {
 	border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(0,0,0,.3);
   background-color: #cec9c1;
@@ -56,6 +53,7 @@
 textarea[id='tweet-text'] + div {
   display: flex;
   justify-content: space-between;
+  width: 90vw;
   align-items: flex-end;
   font-family: 'Bungee', 'sans-serif';
   padding-top: 10px;
@@ -76,6 +74,10 @@ button[type='submit']:hover {
 button[type='submit']:focus {
   border: 2px solid black;
   outline: none;
+}
+
+button[type='submit']:active {
+  box-shadow: none;
 }
 
 .negative-counter {

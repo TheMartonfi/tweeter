@@ -17,10 +17,20 @@ nav {
   border: 4px double white;
   padding: 10px;
   align-self: center;
+  color: white;
+  background-color: inherit;
 }
 
 #compose:hover {
   background-color: #5e83ff;
   cursor: pointer;
   box-shadow: 8px 8px 0px 1px #003688;
+}
+
+#compose:focus {
+  outline: none;
+}
+
+#compose:active {
+  box-shadow: none;
 }
