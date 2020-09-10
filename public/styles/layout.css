@@ -20,3 +20,28 @@ body {
   width: 92%;
   margin: auto;
 }
+
+button[type='button'] {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  border-radius: 40px;
+  font-family: 'Bungee', 'sans-serif';
+  font-weight: bold;
+  color: white;
+  border: 2px solid black;
+  background-color: red;
+}
+
+button[type='button']:focus {
+  border: none;
+  outline: none;
+}
+
+button[type='button']:hover {
+  background-color: rgb(255, 62, 62);
+  cursor: pointer;
+  box-shadow: 3px 3px 0px 1px lightgrey;
+}
