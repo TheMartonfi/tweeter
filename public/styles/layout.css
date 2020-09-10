@@ -21,7 +21,8 @@ body {
   margin: auto;
 }
 
-button[type='button'] {
+#top-button {
+  display: none;
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -35,12 +36,12 @@ button[type='button'] {
   background-color: red;
 }
 
-button[type='button']:focus {
-  border: none;
+#top-button:focus {
+  border: 2px solid black;
   outline: none;
 }
 
-button[type='button']:hover {
+#top-button:hover {
   background-color: rgb(255, 62, 62);
   cursor: pointer;
   box-shadow: 3px 3px 0px 1px lightgrey;

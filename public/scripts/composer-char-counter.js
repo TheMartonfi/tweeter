@@ -12,4 +12,19 @@ $(() => {
       $counter.removeClass('negative-counter');
     }
   });
+
+  $(document).scroll(function() {
+    const scrollLocation = $(this).scrollTop();
+
+    if (scrollLocation !== 0) {
+      $('#top-button').fadeIn(800);
+    } else {
+      $('#top-button').fadeOut(800);
+    }
+  });
+
+  $('#top-button').click(function() {
+    window.scrollTo(0, 0);
+    $('#tweet-text').focus();
+  });
 });
