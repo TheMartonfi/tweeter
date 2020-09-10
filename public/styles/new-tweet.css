@@ -5,7 +5,7 @@
   align-items: center;
   font-weight: bold;
   margin-top: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 38px;
 }
 
 .error {
@@ -64,12 +64,18 @@ textarea[id='tweet-text'] + div {
 button[type='submit'] {
   color: white;
   background-color: #4056A1;
+  border: 2px solid black;
 }
 
 button[type='submit']:hover {
   cursor: pointer;
   background-color: #5e83ff;
   box-shadow: 3px 3px 0px 1px #003688;
+}
+
+button[type='submit']:focus {
+  border: 2px solid black;
+  outline: none;
 }
 
 .negative-counter {
