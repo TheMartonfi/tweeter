@@ -15,3 +15,10 @@ Tweeter is a simple, single-page Twitter clone using HTML, CSS, JavaScript, jQue
 - Chance
 - MD5
 - Node 5.10.x or above
+
+## Screenshots
+
+!['Screenshot of desktop view'](https://github.com/TheMartonfi/tweeter/blob/master/docs/desktop-tweeter.png?raw=true)
+!['Screenshot of tablet view'](https://github.com/TheMartonfi/tweeter/blob/master/docs/tablet-tweeter.png?raw=true)
+!['Screenshot of smartphone view'](https://github.com/TheMartonfi/tweeter/blob/master/docs/smartphone-tweeter.png?raw=true)
+!['Screenshot of collapsed compose box'](https://github.com/TheMartonfi/tweeter/blob/master/docs/tweeter-compose-collapse.png?raw=true)
