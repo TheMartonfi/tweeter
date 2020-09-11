@@ -1,11 +1,14 @@
+$main-background-color: #4056A1;
+$secondary-background-color: #5e83ff;
+
 nav {
   display: flex;
   justify-content: space-between;
   height: 120px;
   width: 100%;
-  background-color: #4056A1;
-  font-family: 'Bungee', 'sans-serif';
-  color: #FFFFFF;
+  background-color: $main-background-color;
+  font-family: $secondary-font;
+  color: white;
   padding: 1.5em;
   overflow: hidden;
   position: fixed;
@@ -14,16 +17,16 @@ nav {
 }
 
 #compose {
-  font-family: 'Source Sans Pro', 'sans-serif';
+  font-family: $main-font;
   border: 4px double white;
   padding: 10px;
   align-self: center;
   color: white;
-  background-color: #4056A1;
+  background-color: $main-background-color;
 }
 
 #compose:hover {
-  background-color: #5e83ff;
+  background-color: $secondary-background-color;
   cursor: pointer;
   box-shadow: 8px 8px 0px 1px #003688;
 }

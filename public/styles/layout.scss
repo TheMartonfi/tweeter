@@ -1,3 +1,14 @@
+$main-background-color: #4056A1;
+$secondary-background-color: #5e83ff;
+$main-font: 'Source Sans Pro', 'sans-serif';
+$secondary-font: 'Bungee', 'sans-serif';
+$black-border: 2px solid black;
+
+@import 'header.scss';
+@import 'nav.scss';
+@import 'new-tweet.scss';
+@import 'tweet.scss';
+
 html {
   box-sizing: border-box;
 }
@@ -9,7 +20,7 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans Pro', 'sans-serif';
+  font-family: $main-font;
 }
 
 .container {
@@ -28,10 +39,10 @@ body {
   height: 50px;
   width: 50px;
   border-radius: 40px;
-  font-family: 'Bungee', 'sans-serif';
+  font-family: $secondary-font;
   font-weight: bold;
   color: white;
-  border: 2px solid black;
+  border: $black-border;
   background-color: red;
 }
 

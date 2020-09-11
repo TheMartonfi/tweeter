@@ -23,7 +23,7 @@
   border: 0;
   border-bottom: 4px solid;
   resize: none;
-  font-family: 'Source Sans Pro', 'sans-serif';
+  font-family: $main-font;
   font-size: 0.75em;
   font-weight: bold;
   background-color: #f4f1ec;
@@ -55,19 +55,19 @@ textarea[id='tweet-text'] + div {
   justify-content: space-between;
   width: 90vw;
   align-items: flex-end;
-  font-family: 'Bungee', 'sans-serif';
+  font-family: $secondary-font;
   padding-top: 10px;
 }
 
 button[type='submit'] {
   color: white;
-  background-color: #4056A1;
+  background-color: $main-background-color;
   border: 2px solid black;
 }
 
 button[type='submit']:hover {
   cursor: pointer;
-  background-color: #5e83ff;
+  background-color: $secondary-background-color;
   box-shadow: 3px 3px 0px 1px #003688;
 }
 
