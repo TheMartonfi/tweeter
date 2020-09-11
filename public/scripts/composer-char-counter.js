@@ -1,4 +1,6 @@
 $(() => {
+
+  //Counts how many characters the user is allowed to type
   $('#tweet-text').keyup(function() {
     const characterCount = $(this).val().length;
     const $counter = $(this).parent().children('div').children('.counter');
@@ -13,6 +15,7 @@ $(() => {
     }
   });
 
+  // Makes scroll to top button appear when user scrolls
   $(document).scroll(function() {
     const scrollLocation = $(this).scrollTop();
 
@@ -23,6 +26,7 @@ $(() => {
     }
   });
 
+  // Brings user back to top of page
   $('#top-button').click(function() {
     window.scrollTo(0, 0);
     $('#tweet-text').focus();

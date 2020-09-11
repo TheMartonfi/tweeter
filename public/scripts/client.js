@@ -1,5 +1,6 @@
 $(() => {
   
+  // This creates a new tweet article node when given a corresponding object
   const createTweetElement = (tweetData) => {
     const $tweet = $(`<article class="tweet"></article>`);
     const $header = $(`<header></header>`);
@@ -55,6 +56,7 @@ $(() => {
     $emptyFieldError.slideUp(800);
     $tooLongError.slideUp(800);
 
+    //Validation checks for empty field and character count
     if (textValue && isCharacterCountValid) {
       $.post('/tweets', serializedText)
       .then(() => {
@@ -69,6 +71,7 @@ $(() => {
     }
   });
 
+  //Toggles the compose tweet area to be visible or hidden
   $('#compose').click(function () {
       $('.new-tweet').slideToggle(800);
       $('#tweet-text').focus();
