@@ -34,7 +34,14 @@ $(() => {
     });
   };
 
-  // Assertion error onloadwff.js:71 when pressing enter in textarea
+  //Form did not submit on enter (how dare you) so I did it myself
+  $('#tweet-text').keydown(function(event) {
+    if (event.which === 13) {
+      $(this).blur();
+      $(this).parent().children('div').children('button').focus().click();
+    }
+  });
+
   $('form').submit(function(event) {
     event.preventDefault();
 
